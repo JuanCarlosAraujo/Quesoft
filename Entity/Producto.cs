@@ -11,7 +11,6 @@ namespace Entity
         public String nombre { get; set; }
         public double precioVenta { get; set; }
         public int idProducto { get; set; }
-
         public Producto(string nombre, double precioVenta, int idProducto)
         {
             this.nombre = nombre;

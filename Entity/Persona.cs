@@ -8,18 +8,14 @@ namespace Entity
 {
     abstract class Persona 
     {
-        public String primerNombre { get; set; }
-        public String segundoNombre { get; set; }
-        public String primerApellido { get; set; }
-        public String segundoApellido { get; set; }
+        public String Nombre { get; set; }
+        public String Apellido { get; set; }
         public List<Factura> productosFactura { get; set; }
 
-        public Persona(string primerNombre, string segundoNombre, string primerApellido, string segundoApellido, List<Factura> productosFactura)
+        public Persona(string Nombre, string Apellido, List<Factura> productosFactura)
         {
-            this.primerNombre = primerNombre;
-            this.segundoNombre = segundoNombre;
-            this.primerApellido = primerApellido;
-            this.segundoApellido = segundoApellido;
+            this.Nombre = Nombre;
+            this.Apellido = Apellido;
             this.productosFactura = productosFactura;
         }
 

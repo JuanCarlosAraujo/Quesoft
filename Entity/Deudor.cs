@@ -11,7 +11,8 @@ namespace Entity
         public double valorDeuda{ get; set; }
         public String documento { get; set; }
 
-        public Deudor(double valorDeuda, string documento)
+        public Deudor(String nombre, String apellido,  List<Factura> productosFactura, double valorDeuda, string documento) : 
+            base(nombre, apellido, productosFactura)
         {
             this.valorDeuda = valorDeuda;
             this.documento = documento;

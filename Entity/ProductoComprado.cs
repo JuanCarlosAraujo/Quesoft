@@ -12,7 +12,8 @@ namespace Entity
 
        public double costoCompra { get; set; }
 
-        public ProductoComprado(double costoCompra)
+        public ProductoComprado(String nombre, double precioVenta, int idProducto, double costoCompra) :
+            base (nombre, precioVenta, idProducto)
         {
             this.costoCompra = costoCompra;
         }
