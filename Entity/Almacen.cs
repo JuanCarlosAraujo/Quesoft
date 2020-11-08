@@ -26,13 +26,7 @@ namespace Entity
            
         }
 
-        public String MostrarProductos()
-        {
-            foreach(){
-
-            }
-            return "";
-        }
+        
         
         
     }
