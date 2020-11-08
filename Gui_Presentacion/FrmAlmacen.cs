@@ -29,10 +29,7 @@ namespace Gui_Presentacion
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Frm_Principal principal = new Frm_Principal();
-            this.Hide();
-            principal.Show();
-           
+            
         }
     }
 }

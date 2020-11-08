@@ -29,167 +29,141 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Principal));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelAlmacen = new System.Windows.Forms.Label();
+            this.pictureAlmacen = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.labelGestion = new System.Windows.Forms.Label();
+            this.pictureBoxProductos = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.labelAgentes = new System.Windows.Forms.Label();
+            this.pictureBoxAgentes = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.labelFinanzas = new System.Windows.Forms.Label();
+            this.pictureBoxFinanzas = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            this.labelWelcome2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAlmacen)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProductos)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgentes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFinanzas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Geometr415 Blk BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(27, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 35);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "BIENVENIDO";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(30, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(352, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Gestiona de una manera facil e interactiva tu empresa.";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Goldenrod;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.labelAlmacen);
+            this.panel1.Controls.Add(this.pictureAlmacen);
             this.panel1.Location = new System.Drawing.Point(1, 158);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 291);
             this.panel1.TabIndex = 2;
             // 
+            // labelAlmacen
+            // 
+            this.labelAlmacen.AutoSize = true;
+            this.labelAlmacen.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAlmacen.ForeColor = System.Drawing.Color.White;
+            this.labelAlmacen.Location = new System.Drawing.Point(42, 20);
+            this.labelAlmacen.Name = "labelAlmacen";
+            this.labelAlmacen.Size = new System.Drawing.Size(114, 16);
+            this.labelAlmacen.TabIndex = 1;
+            this.labelAlmacen.Text = "Gestión Almacén";
+            // 
+            // pictureAlmacen
+            // 
+            this.pictureAlmacen.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
+            this.pictureAlmacen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureAlmacen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureAlmacen.Image = global::Gui_Presentacion.Properties.Resources.Almacenad;
+            this.pictureAlmacen.Location = new System.Drawing.Point(0, 1);
+            this.pictureAlmacen.Name = "pictureAlmacen";
+            this.pictureAlmacen.Size = new System.Drawing.Size(209, 291);
+            this.pictureAlmacen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureAlmacen.TabIndex = 0;
+            this.pictureAlmacen.TabStop = false;
+            this.pictureAlmacen.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OliveDrab;
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.labelGestion);
+            this.panel2.Controls.Add(this.pictureBoxProductos);
             this.panel2.Location = new System.Drawing.Point(201, 158);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 291);
             this.panel2.TabIndex = 3;
             // 
+            // labelGestion
+            // 
+            this.labelGestion.AutoSize = true;
+            this.labelGestion.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGestion.ForeColor = System.Drawing.Color.White;
+            this.labelGestion.Location = new System.Drawing.Point(44, 20);
+            this.labelGestion.Name = "labelGestion";
+            this.labelGestion.Size = new System.Drawing.Size(123, 16);
+            this.labelGestion.TabIndex = 2;
+            this.labelGestion.Text = "Gestión Productos";
+            // 
+            // pictureBoxProductos
+            // 
+            this.pictureBoxProductos.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxProductos.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
+            this.pictureBoxProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxProductos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxProductos.Image = global::Gui_Presentacion.Properties.Resources._52b6db816135381e779c23e360de15de1;
+            this.pictureBoxProductos.Location = new System.Drawing.Point(-1, -18);
+            this.pictureBoxProductos.Name = "pictureBoxProductos";
+            this.pictureBoxProductos.Size = new System.Drawing.Size(215, 312);
+            this.pictureBoxProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxProductos.TabIndex = 2;
+            this.pictureBoxProductos.TabStop = false;
+            this.pictureBoxProductos.Click += new System.EventHandler(this.pictureBoxProductos_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Indigo;
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.pictureBox5);
+            this.panel3.Controls.Add(this.labelAgentes);
+            this.panel3.Controls.Add(this.pictureBoxAgentes);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Location = new System.Drawing.Point(401, 158);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 291);
             this.panel3.TabIndex = 3;
             // 
-            // panel4
+            // labelAgentes
             // 
-            this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(601, 158);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 291);
-            this.panel4.TabIndex = 4;
+            this.labelAgentes.AutoSize = true;
+            this.labelAgentes.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAgentes.ForeColor = System.Drawing.Color.White;
+            this.labelAgentes.Location = new System.Drawing.Point(36, 20);
+            this.labelAgentes.Name = "labelAgentes";
+            this.labelAgentes.Size = new System.Drawing.Size(121, 16);
+            this.labelAgentes.TabIndex = 3;
+            this.labelAgentes.Text = "Agentes y Deudas";
+            this.labelAgentes.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label3
+            // pictureBoxAgentes
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(42, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Gestión Almacén";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(44, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Gestión Productos";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(36, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 16);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Agentes y Deudas";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(67, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 16);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Finanzas";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::Gui_Presentacion.Properties.Resources._1667808;
-            this.pictureBox4.Location = new System.Drawing.Point(0, -21);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(200, 312);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = global::Gui_Presentacion.Properties.Resources.unnamed__w_;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(200, 291);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
+            this.pictureBoxAgentes.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
+            this.pictureBoxAgentes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAgentes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxAgentes.Image = global::Gui_Presentacion.Properties.Resources.unnamed__w_;
+            this.pictureBoxAgentes.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxAgentes.Name = "pictureBoxAgentes";
+            this.pictureBoxAgentes.Size = new System.Drawing.Size(200, 291);
+            this.pictureBoxAgentes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxAgentes.TabIndex = 1;
+            this.pictureBoxAgentes.TabStop = false;
+            this.pictureBoxAgentes.Click += new System.EventHandler(this.pictureBoxAgentes_Click);
             // 
             // pictureBox3
             // 
@@ -199,98 +173,128 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox2
+            // panel4
             // 
-            this.pictureBox2.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Gui_Presentacion.Properties.Resources.Almacenad;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(209, 291);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel4.Controls.Add(this.labelFinanzas);
+            this.panel4.Controls.Add(this.pictureBoxFinanzas);
+            this.panel4.Location = new System.Drawing.Point(601, 158);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 291);
+            this.panel4.TabIndex = 4;
             // 
-            // pictureBox1
+            // labelFinanzas
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Gui_Presentacion.Properties.Resources._52b6db816135381e779c23e360de15de1;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 312);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.labelFinanzas.AutoSize = true;
+            this.labelFinanzas.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFinanzas.ForeColor = System.Drawing.Color.White;
+            this.labelFinanzas.Location = new System.Drawing.Point(67, 20);
+            this.labelFinanzas.Name = "labelFinanzas";
+            this.labelFinanzas.Size = new System.Drawing.Size(63, 16);
+            this.labelFinanzas.TabIndex = 4;
+            this.labelFinanzas.Text = "Finanzas";
             // 
-            // pictureBox6
+            // pictureBoxFinanzas
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Gui_Presentacion.Properties.Resources.logo;
-            this.pictureBox6.Location = new System.Drawing.Point(589, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(201, 195);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.pictureBoxFinanzas.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
+            this.pictureBoxFinanzas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxFinanzas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxFinanzas.Image = global::Gui_Presentacion.Properties.Resources._1667808;
+            this.pictureBoxFinanzas.Location = new System.Drawing.Point(0, -21);
+            this.pictureBoxFinanzas.Name = "pictureBoxFinanzas";
+            this.pictureBoxFinanzas.Size = new System.Drawing.Size(200, 312);
+            this.pictureBoxFinanzas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxFinanzas.TabIndex = 0;
+            this.pictureBoxFinanzas.TabStop = false;
+            this.pictureBoxFinanzas.Click += new System.EventHandler(this.pictureBoxFinanzas_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogo.Image = global::Gui_Presentacion.Properties.Resources.logo;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(601, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(189, 195);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxLogo.TabIndex = 5;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Font = new System.Drawing.Font("Geometr415 Blk BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelWelcome.Location = new System.Drawing.Point(27, 46);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(191, 35);
+            this.labelWelcome.TabIndex = 0;
+            this.labelWelcome.Text = "BIENVENIDO";
+            // 
+            // labelWelcome2
+            // 
+            this.labelWelcome2.AutoSize = true;
+            this.labelWelcome2.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelWelcome2.Location = new System.Drawing.Point(30, 96);
+            this.labelWelcome2.Name = "labelWelcome2";
+            this.labelWelcome2.Size = new System.Drawing.Size(352, 16);
+            this.labelWelcome2.TabIndex = 1;
+            this.labelWelcome2.Text = "Gestiona de una manera facil e interactiva tu empresa.";
             // 
             // Frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelWelcome2);
+            this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBoxLogo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Frm_Principal";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAlmacen)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProductos)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgentes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFinanzas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxProductos;
+        private System.Windows.Forms.PictureBox pictureAlmacen;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBoxAgentes;
+        private System.Windows.Forms.PictureBox pictureBoxFinanzas;
+        private System.Windows.Forms.Label labelAlmacen;
+        private System.Windows.Forms.Label labelGestion;
+        private System.Windows.Forms.Label labelAgentes;
+        private System.Windows.Forms.Label labelFinanzas;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.Label labelWelcome2;
     }
 }
 
