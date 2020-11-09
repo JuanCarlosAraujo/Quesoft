@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Deudor : Persona
+    public class Deudor : Persona
     {
         public String Documento { get; set; }
 
-        public Deudor(String nombre, String apellido,  List<Factura> productosFactura, double valorDeuda, string documento) : 
+        public Deudor(String nombre, String apellido, List<Factura> productosFactura, double valorDeuda, string documento) :
             base(nombre, apellido, productosFactura, valorDeuda)
         {
             this.Documento = documento;

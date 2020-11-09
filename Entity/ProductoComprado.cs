@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    
-    class ProductoComprado : Producto
+
+    public class ProductoComprado : Producto
     {
 
-       public double CostoCompra { get; set; }
+        public double CostoCompra { get; set; }
 
         public ProductoComprado(String nombre, double precioVenta, int idProducto, double costoCompra) :
-            base (nombre, precioVenta, idProducto)
+            base(nombre, precioVenta, idProducto)
         {
             this.CostoCompra = costoCompra;
         }

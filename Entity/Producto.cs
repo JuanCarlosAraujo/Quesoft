@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    abstract class Producto
+    public class Producto
     {
         public String Nombre { get; set; }
         public double PrecioVenta { get; set; }

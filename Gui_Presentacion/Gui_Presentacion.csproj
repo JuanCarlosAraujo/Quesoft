@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormChildAgregarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildAgregarPersona.Designer.cs">
+      <DependentUpon>FormChildAgregarPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildMostrarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildMostrarProductos.Designer.cs">
+      <DependentUpon>FormChildMostrarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAlmacen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +90,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormChildAgregarPersona.resx">
+      <DependentUpon>FormChildAgregarPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildMostrarProductos.resx">
+      <DependentUpon>FormChildMostrarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAlmacen.resx">
       <DependentUpon>FrmAlmacen.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +166,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{ca11f70d-7253-4245-abd7-786aaec896a1}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{1983957a-6a66-4fed-8f66-3f968b168af6}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

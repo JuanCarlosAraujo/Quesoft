@@ -16,5 +16,27 @@ namespace Gui_Presentacion
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openFormChild(new FormChildAgregarPersona());
+        }
+
+        private void openFormChild(object formChild)
+        {
+            if (this.panelChildForm.Controls.Count > 0 )
+            {
+                this.panelChildForm.Controls.RemoveAt(0);
+            }
+
+            Form child = formChild as Form;
+            child.TopLevel = false;
+            child.Dock = DockStyle.Fill;
+            this.panelChildForm.Controls.Add(child);
+            this.panelChildForm.Tag = child;
+            child.Show();
+        }
+
     }
+
 }

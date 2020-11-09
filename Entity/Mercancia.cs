@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Mercancia
+    public class Mercancia
     {
         public Producto Producto { get; set; }
         public double Cantidad { get; set; }

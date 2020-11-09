@@ -31,29 +31,29 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Principal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelAlmacen = new System.Windows.Forms.Label();
-            this.pictureAlmacen = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelGestion = new System.Windows.Forms.Label();
-            this.pictureBoxProductos = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelAgentes = new System.Windows.Forms.Label();
-            this.pictureBoxAgentes = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelFinanzas = new System.Windows.Forms.Label();
-            this.pictureBoxFinanzas = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.labelWelcome2 = new System.Windows.Forms.Label();
+            this.pictureBoxFinanzas = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAgentes = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureAlmacen = new System.Windows.Forms.PictureBox();
+            this.pictureBoxProductos = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAlmacen)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProductos)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgentes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFinanzas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgentes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAlmacen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,20 +78,6 @@
             this.labelAlmacen.TabIndex = 1;
             this.labelAlmacen.Text = "Gestión Almacén";
             // 
-            // pictureAlmacen
-            // 
-            this.pictureAlmacen.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
-            this.pictureAlmacen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureAlmacen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureAlmacen.Image = global::Gui_Presentacion.Properties.Resources.Almacenad;
-            this.pictureAlmacen.Location = new System.Drawing.Point(0, 1);
-            this.pictureAlmacen.Name = "pictureAlmacen";
-            this.pictureAlmacen.Size = new System.Drawing.Size(209, 291);
-            this.pictureAlmacen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureAlmacen.TabIndex = 0;
-            this.pictureAlmacen.TabStop = false;
-            this.pictureAlmacen.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OliveDrab;
@@ -113,21 +99,6 @@
             this.labelGestion.TabIndex = 2;
             this.labelGestion.Text = "Gestión Productos";
             // 
-            // pictureBoxProductos
-            // 
-            this.pictureBoxProductos.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxProductos.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
-            this.pictureBoxProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxProductos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxProductos.Image = global::Gui_Presentacion.Properties.Resources._52b6db816135381e779c23e360de15de1;
-            this.pictureBoxProductos.Location = new System.Drawing.Point(-1, -18);
-            this.pictureBoxProductos.Name = "pictureBoxProductos";
-            this.pictureBoxProductos.Size = new System.Drawing.Size(215, 312);
-            this.pictureBoxProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxProductos.TabIndex = 2;
-            this.pictureBoxProductos.TabStop = false;
-            this.pictureBoxProductos.Click += new System.EventHandler(this.pictureBoxProductos_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Indigo;
@@ -144,34 +115,12 @@
             this.labelAgentes.AutoSize = true;
             this.labelAgentes.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAgentes.ForeColor = System.Drawing.Color.White;
-            this.labelAgentes.Location = new System.Drawing.Point(36, 20);
+            this.labelAgentes.Location = new System.Drawing.Point(26, 21);
             this.labelAgentes.Name = "labelAgentes";
-            this.labelAgentes.Size = new System.Drawing.Size(121, 16);
+            this.labelAgentes.Size = new System.Drawing.Size(146, 16);
             this.labelAgentes.TabIndex = 3;
-            this.labelAgentes.Text = "Agentes y Deudas";
+            this.labelAgentes.Text = "Proveedores y Deudas";
             this.labelAgentes.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // pictureBoxAgentes
-            // 
-            this.pictureBoxAgentes.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
-            this.pictureBoxAgentes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxAgentes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxAgentes.Image = global::Gui_Presentacion.Properties.Resources.unnamed__w_;
-            this.pictureBoxAgentes.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxAgentes.Name = "pictureBoxAgentes";
-            this.pictureBoxAgentes.Size = new System.Drawing.Size(200, 291);
-            this.pictureBoxAgentes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxAgentes.TabIndex = 1;
-            this.pictureBoxAgentes.TabStop = false;
-            this.pictureBoxAgentes.Click += new System.EventHandler(this.pictureBoxAgentes_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 290);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
             // 
             // panel4
             // 
@@ -193,31 +142,6 @@
             this.labelFinanzas.Size = new System.Drawing.Size(63, 16);
             this.labelFinanzas.TabIndex = 4;
             this.labelFinanzas.Text = "Finanzas";
-            // 
-            // pictureBoxFinanzas
-            // 
-            this.pictureBoxFinanzas.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
-            this.pictureBoxFinanzas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxFinanzas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxFinanzas.Image = global::Gui_Presentacion.Properties.Resources._1667808;
-            this.pictureBoxFinanzas.Location = new System.Drawing.Point(0, -21);
-            this.pictureBoxFinanzas.Name = "pictureBoxFinanzas";
-            this.pictureBoxFinanzas.Size = new System.Drawing.Size(200, 312);
-            this.pictureBoxFinanzas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxFinanzas.TabIndex = 0;
-            this.pictureBoxFinanzas.TabStop = false;
-            this.pictureBoxFinanzas.Click += new System.EventHandler(this.pictureBoxFinanzas_Click);
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLogo.Image = global::Gui_Presentacion.Properties.Resources.logo;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(601, 0);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(189, 195);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxLogo.TabIndex = 5;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // labelWelcome
             // 
@@ -241,6 +165,82 @@
             this.labelWelcome2.TabIndex = 1;
             this.labelWelcome2.Text = "Gestiona de una manera facil e interactiva tu empresa.";
             // 
+            // pictureBoxFinanzas
+            // 
+            this.pictureBoxFinanzas.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
+            this.pictureBoxFinanzas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxFinanzas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxFinanzas.Image = global::Gui_Presentacion.Properties.Resources._1667808;
+            this.pictureBoxFinanzas.Location = new System.Drawing.Point(0, -21);
+            this.pictureBoxFinanzas.Name = "pictureBoxFinanzas";
+            this.pictureBoxFinanzas.Size = new System.Drawing.Size(200, 312);
+            this.pictureBoxFinanzas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxFinanzas.TabIndex = 0;
+            this.pictureBoxFinanzas.TabStop = false;
+            this.pictureBoxFinanzas.Click += new System.EventHandler(this.pictureBoxFinanzas_Click);
+            // 
+            // pictureBoxAgentes
+            // 
+            this.pictureBoxAgentes.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
+            this.pictureBoxAgentes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAgentes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxAgentes.Image = global::Gui_Presentacion.Properties.Resources.unnamed__w_;
+            this.pictureBoxAgentes.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxAgentes.Name = "pictureBoxAgentes";
+            this.pictureBoxAgentes.Size = new System.Drawing.Size(200, 291);
+            this.pictureBoxAgentes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxAgentes.TabIndex = 1;
+            this.pictureBoxAgentes.TabStop = false;
+            this.pictureBoxAgentes.Click += new System.EventHandler(this.pictureBoxAgentes_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(200, 290);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureAlmacen
+            // 
+            this.pictureAlmacen.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
+            this.pictureAlmacen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureAlmacen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureAlmacen.Image = global::Gui_Presentacion.Properties.Resources.Almacenad;
+            this.pictureAlmacen.Location = new System.Drawing.Point(0, 1);
+            this.pictureAlmacen.Name = "pictureAlmacen";
+            this.pictureAlmacen.Size = new System.Drawing.Size(209, 291);
+            this.pictureAlmacen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureAlmacen.TabIndex = 0;
+            this.pictureAlmacen.TabStop = false;
+            this.pictureAlmacen.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBoxProductos
+            // 
+            this.pictureBoxProductos.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxProductos.BackgroundImage = global::Gui_Presentacion.Properties.Resources.degradado_en_negro_borde_inferior_1;
+            this.pictureBoxProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxProductos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxProductos.Image = global::Gui_Presentacion.Properties.Resources._52b6db816135381e779c23e360de15de1;
+            this.pictureBoxProductos.Location = new System.Drawing.Point(-1, -18);
+            this.pictureBoxProductos.Name = "pictureBoxProductos";
+            this.pictureBoxProductos.Size = new System.Drawing.Size(215, 312);
+            this.pictureBoxProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxProductos.TabIndex = 2;
+            this.pictureBoxProductos.TabStop = false;
+            this.pictureBoxProductos.Click += new System.EventHandler(this.pictureBoxProductos_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogo.Image = global::Gui_Presentacion.Properties.Resources.logo;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(601, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(189, 195);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxLogo.TabIndex = 5;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // Frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,17 +261,17 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAlmacen)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProductos)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgentes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFinanzas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgentes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAlmacen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

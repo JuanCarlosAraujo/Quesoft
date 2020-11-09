@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Proveedor : Persona
+    public class Proveedor : Persona
     {
-        
+
         public Proveedor(String nombre, String apellido, List<Factura> productosFactura, double valorDeuda) :
             base(nombre, apellido, productosFactura, valorDeuda)
         {
         }
 
-        public Proveedor(String nombre, String apellido)
+        public Proveedor(String nombre, String apellido) :
+            base(nombre, apellido)
         {
 
         }

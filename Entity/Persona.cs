@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    abstract class Persona 
+    public class Persona
     {
         public String Nombre { get; set; }
         public String Apellido { get; set; }

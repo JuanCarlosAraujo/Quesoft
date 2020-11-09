@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Almacen
+    public class Almacen
     {
-        public List<Mercancia> Productos{ get; set; }
+        public List<Mercancia> Productos { get; set; }
 
         public Almacen(List<Mercancia> productos)
         {
@@ -23,6 +23,7 @@ namespace Entity
         {
             Productos.Add(producto);
             return "se ha añadido correctamente";
-        }  
+        }
     }
 }
+

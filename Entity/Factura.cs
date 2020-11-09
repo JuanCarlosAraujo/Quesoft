@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Factura
+    public class Factura
     {
         public Persona Persona { set; get; }
         public double ValorTotal { set; get; }
@@ -15,7 +15,7 @@ namespace Entity
         public int TipoFactura { set; get; }
         public bool EstadoFactura { set; get; }
         public DateTime Fecha { set; get; }
-        public double AbonoRealizado { set; get; } 
+        public double AbonoRealizado { set; get; }
 
         public Factura(Persona persona, List<DetalleFactura> productos, int tipoFactura, bool estadoFactura)
         {
