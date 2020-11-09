@@ -10,12 +10,12 @@ namespace Entity
     class ProductoComprado : Producto
     {
 
-       public double costoCompra { get; set; }
+       public double CostoCompra { get; set; }
 
         public ProductoComprado(String nombre, double precioVenta, int idProducto, double costoCompra) :
             base (nombre, precioVenta, idProducto)
         {
-            this.costoCompra = costoCompra;
+            this.CostoCompra = costoCompra;
         }
     }
 }

@@ -8,26 +8,21 @@ namespace Entity
 {
     class Almacen
     {
-        public List<Mercancia> productos{ get; set; }
+        public List<Mercancia> Productos{ get; set; }
 
         public Almacen(List<Mercancia> productos)
         {
-            this.productos = productos;
+            this.Productos = productos;
         }
 
         public Almacen()
         {
         }
 
-        public void AñadirProductos(Mercancia producto)
+        public String AñadirProductos(Mercancia producto)
         {
-
-            productos.Add(producto);
-           
-        }
-
-        
-        
-        
+            Productos.Add(producto);
+            return "se ha añadido correctamente";
+        }  
     }
 }

@@ -44,6 +44,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelChildForm.BackColor = System.Drawing.Color.Gray;
             this.panelChildForm.Location = new System.Drawing.Point(38, 157);
+            this.panelChildForm.MinimumSize = new System.Drawing.Size(724, 260);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(724, 260);
             this.panelChildForm.TabIndex = 10;

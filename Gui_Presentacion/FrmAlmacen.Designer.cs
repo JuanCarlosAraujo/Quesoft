@@ -123,6 +123,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(724, 260);
             this.Name = "FrmAlmacen";
             this.Text = "FrmAlmacen";
             this.ResumeLayout(false);

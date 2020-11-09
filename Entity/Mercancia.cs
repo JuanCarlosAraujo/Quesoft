@@ -9,31 +9,29 @@ namespace Entity
 {
     class Mercancia
     {
-        public Producto producto { get; set; }
-        public double cantidad { get; set; }
-        public double precioTotal { get; set; }
-        public String unidad { get; set; }
+        public Producto Producto { get; set; }
+        public double Cantidad { get; set; }
+        public double PrecioTotal { get; set; }
+        public String Unidad { get; set; }
 
         public Mercancia(Producto producto, int cantidad)
         {
-            this.producto = producto;
-            this.cantidad = cantidad;
-            precioTotal = producto.precioVenta * cantidad;
+            this.Producto = producto;
+            this.Cantidad = cantidad;
+            this.PrecioTotal = producto.PrecioVenta * cantidad;
         }
 
         public Mercancia()
         {
         }
 
-        public void TransformarUnidades()
+        public void TransformarUnidades(Producto producto, String unidad)
         {
-            if (producto.nombre == "Queso" && unidad == "Libra")
+            if (Producto.Nombre == "Queso" && Unidad == "Libra")
             {
-                this.cantidad = this.cantidad * 0.453592;
-                this.unidad = "Kilogramos";
+                this.Cantidad = this.Cantidad * 0.453592;
+                this.Unidad = "Kilogramos";
             }
-           
         }
-
     }
 }

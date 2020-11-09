@@ -8,12 +8,15 @@ namespace Entity
 {
     class Proveedor : Persona
     {
-        public double valorDeuda { get; set; }
-
+        
         public Proveedor(String nombre, String apellido, List<Factura> productosFactura, double valorDeuda) :
-            base(nombre, apellido, productosFactura)
+            base(nombre, apellido, productosFactura, valorDeuda)
         {
-            this.valorDeuda = valorDeuda;
+        }
+
+        public Proveedor(String nombre, String apellido)
+        {
+
         }
 
         public Proveedor()

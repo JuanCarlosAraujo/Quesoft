@@ -8,12 +8,12 @@ namespace Entity
 {
     class ProductoFabricado : Producto
     {
-        public double costoFabricacion { get; set; }
+        public double CostoFabricacion { get; set; }
 
         public ProductoFabricado(String nombre, double precioVenta, int idProducto, double costoFabricacion) :
             base (nombre, precioVenta, idProducto)
         {
-            this.costoFabricacion = costoFabricacion;
+            this.CostoFabricacion = costoFabricacion;
         }
     }
 }

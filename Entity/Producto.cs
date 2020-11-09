@@ -8,14 +8,14 @@ namespace Entity
 {
     abstract class Producto
     {
-        public String nombre { get; set; }
-        public double precioVenta { get; set; }
-        public int idProducto { get; set; }
+        public String Nombre { get; set; }
+        public double PrecioVenta { get; set; }
+        public int IdProducto { get; set; }
         public Producto(string nombre, double precioVenta, int idProducto)
         {
-            this.nombre = nombre;
-            this.precioVenta = precioVenta;
-            this.idProducto = idProducto;
+            this.Nombre = nombre;
+            this.PrecioVenta = precioVenta;
+            this.IdProducto = idProducto;
         }
 
         public Producto()
