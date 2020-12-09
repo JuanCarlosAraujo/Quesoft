@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace Gui_Presentacion
 {
@@ -33,6 +34,7 @@ namespace Gui_Presentacion
         {
             Frm_AgentesYDeudas agentesYDeudas = new Frm_AgentesYDeudas();
             agentesYDeudas.Show();
+                       
         }
 
         private void pictureBoxProductos_Click(object sender, EventArgs e)

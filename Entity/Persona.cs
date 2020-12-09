@@ -10,6 +10,7 @@ namespace Entity
     {
         public String Nombre { get; set; }
         public String Apellido { get; set; }
+
         public List<Factura> ProductosFactura { get; set; }
         public double ValorDeuda { get; set; }
 

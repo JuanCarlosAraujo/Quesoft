@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -89,6 +90,13 @@ namespace Gui_Presentacion
             LblGuardar.Show();
         }
 
+        private void AddDataGrigView(Persona persona)
+        {
+
+            int n = dtgvPersonas.Rows.Add();
+            
+        }
+
         private void TxtNombre_TextChanged(object sender, EventArgs e)
         {
             LblGuardar.Hide();
@@ -116,6 +124,11 @@ namespace Gui_Presentacion
                 LblGuardar.Text = "Guardado";
                 return true;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

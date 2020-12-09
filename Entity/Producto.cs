@@ -10,8 +10,8 @@ namespace Entity
     {
         public String Nombre { get; set; }
         public double PrecioVenta { get; set; }
-        public int IdProducto { get; set; }
-        public Producto(string nombre, double precioVenta, int idProducto)
+        public string IdProducto { get; set; }
+        public Producto(string nombre, double precioVenta, string idProducto)
         {
             this.Nombre = nombre;
             this.PrecioVenta = precioVenta;
