@@ -2,9 +2,11 @@
 using Entity;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -13,87 +15,44 @@ namespace BLL
         private readonly ConexionBD _conexion;
         private readonly DeudorRepository _repositorio;
 
-        public DeudorService(string connectionString)
+        public DeudorService()
         {
-            
+            _conexion = new ConexionBD();
             _repositorio = new DeudorRepository(_conexion);
         }
 
-        public GuardarDeudorResponse Guardar(Deudor deudor)
+        public void Connection()
         {
             try
             {
                 _conexion.Open();
-                _repositorio.Guardar(deudor);
+                MessageBox.Show(_conexion.State());
                 _conexion.Close();
-                return new GuardarDeudorResponse(deudor);
             }
-            catch (Exception e)
-            {
-                return new GuardarDeudorResponse($"Error de la Aplicacion: {e.Message}");
-            }
-            finally { _conexion.Close(); }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+
         }
 
-        public Deudor BuscarxIdentificacion(string identificacion)
-        {
-            _conexion.Open();
-            Deudor deudor = _repositorio.BuscarPorIdentificacion(identificacion);
-            _conexion.Close();
-            return deudor;
-        }
-
-        public List<Deudor> ConsultarTodos()
-        {
-            _conexion.Open();
-            List<Deudor> deudor = _repositorio.ConsultarTodo();
-            _conexion.Close();
-            return deudor;
-        }
-
-        public string Eliminar(string identificacion)
+        public DataTable Leer()
         {
             try
             {
-                _conexion.Open();
-                var persona = _repositorio.BuscarPorIdentificacion(identificacion);
-                if (persona != null)
-                {
-                    _repositorio.Eliminar(persona);
-                    _conexion.Close();
-                    return ($"El registro {persona.Nombre} se ha eliminado satisfactoriamente.");
-                }
-                else
-                {
-                    return ($"Lo sentimos, {identificacion} no se encuentra registrada.");
-                }
+                _repositorio.Leer();
             }
-            catch (Exception e)
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+            return _repositorio.Leer();
+        }
+
+        public void Guardar(String primer_nombre, String primer_apellido, String documento)
+        {
+            try
             {
-
-                return $"Error de la Aplicación: {e.Message}";
+                _repositorio.Guardar(primer_nombre, primer_apellido, documento);
+                MessageBox.Show("Persona Insertada");
             }
-            finally { _conexion.Close(); }
+            catch (Exception) { MessageBox.Show("Algo Fallo"); }
 
         }
-
-    }
-
-    public class GuardarDeudorResponse
-    {
-        public GuardarDeudorResponse(Deudor deudor)
-        {
-            Error = false;
-            Deudor = deudor;
-        }
-        public GuardarDeudorResponse(string mensaje)
-        {
-            Error = true;
-            Mensaje = mensaje;
-        }
-        public bool Error { get; set; }
-        public string Mensaje { get; set; }
-        public Deudor Deudor { get; set; }
     }
 
 }

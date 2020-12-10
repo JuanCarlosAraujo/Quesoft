@@ -46,11 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetalleDeudorService.cs" />
+    <Compile Include="DetalleProveedorService.cs" />
     <Compile Include="DeudorService.cs" />
-    <Compile Include="FacturaService.cs" />
+    <Compile Include="ProductoProveedorService.cs" />
     <Compile Include="ProductosService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedorService.cs" />
+    <Compile Include="ReciboDeudorService.cs" />
+    <Compile Include="ReciboProveedorService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

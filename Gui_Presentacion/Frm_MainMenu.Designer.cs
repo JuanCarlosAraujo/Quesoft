@@ -74,11 +74,11 @@
             this.labelAlmacen.AutoSize = true;
             this.labelAlmacen.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAlmacen.ForeColor = System.Drawing.Color.White;
-            this.labelAlmacen.Location = new System.Drawing.Point(42, 20);
+            this.labelAlmacen.Location = new System.Drawing.Point(63, 20);
             this.labelAlmacen.Name = "labelAlmacen";
-            this.labelAlmacen.Size = new System.Drawing.Size(114, 16);
+            this.labelAlmacen.Size = new System.Drawing.Size(71, 16);
             this.labelAlmacen.TabIndex = 1;
-            this.labelAlmacen.Text = "Gestión Almacén";
+            this.labelAlmacen.Text = "Inventario";
             // 
             // pictureAlmacen
             // 

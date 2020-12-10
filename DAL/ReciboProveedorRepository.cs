@@ -1,19 +1,20 @@
-﻿using Entity;
-using Oracle.ManagedDataAccess.Client;
+﻿using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.Data;
+
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class DeudorRepository
+    public class ReciboProveedorRepository
     {
+
         public static OracleConnection conn;
         public static ConexionBD conexion = new ConexionBD();
-        public DeudorRepository(ConexionBD conexion)
+        public ReciboProveedorRepository(ConexionBD conexion)
         {
             conn = conexion.Conectar();
         }
@@ -30,23 +31,21 @@ namespace DAL
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conexion.Conectar();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from deudor";
+            cmd.CommandText = "select * from recibo_proveedor";
             OracleDataAdapter da = new OracleDataAdapter();
             da.SelectCommand = cmd;
             da.Fill(dt);
             return dt;
         }
-
-        public void Guardar(String primer_nombre, String primer_apellido, String documento)
+        public void Guardar(String id_proveedor,  char estado_factura)
         {
             conexion.Open();
-            OracleCommand comando = new OracleCommand("pro_añadir_deudor", conn);
+            OracleCommand comando = new OracleCommand("pro_añadir_recibo_proveedor", conn);
             comando.CommandType = System.Data.CommandType.StoredProcedure;
-            comando.Parameters.Add("cedula", OracleDbType.Varchar2).Value = documento;
-            comando.Parameters.Add("primer_nombre", OracleDbType.Varchar2).Value = primer_nombre;
-            comando.Parameters.Add("primer_apellido", OracleDbType.Varchar2).Value = primer_apellido;
+	        comando.Parameters.Add("id_proveedor", OracleDbType.Varchar2).Value = id_proveedor;
+	        comando.Parameters.Add("estado_factura", OracleDbType.Char).Value = estado_factura;
             comando.ExecuteNonQuery();
             conexion.Close();
         }
-    }
+    }       
 }

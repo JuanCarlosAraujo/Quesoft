@@ -1,9 +1,7 @@
 ﻿using DAL;
-using Entity;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.OracleClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,15 +9,15 @@ using System.Windows.Forms;
 
 namespace BLL
 {
-    public class ProveedorService
+    public class DetalleProveedorService
     {
         private readonly ConexionBD _conexion;
-        private readonly ProveedorRepository _repositorio;
+        private readonly DetalleProveedorRepository _repositorio;
 
-        public ProveedorService()
+        public DetalleProveedorService()
         {
             _conexion = new ConexionBD();
-            _repositorio = new ProveedorRepository(_conexion);
+            _repositorio = new DetalleProveedorRepository(_conexion);
         }
 
         public void Connection()
@@ -31,7 +29,7 @@ namespace BLL
                 _conexion.Close();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
-            
+
         }
 
         public DataTable Leer()
@@ -44,21 +42,15 @@ namespace BLL
             return _repositorio.Leer();
         }
 
-        public void Guardar(String primer_nombre, String primer_apellido, String numero_proveedor, String correo_proveedor)
+        public void Guardar(String sk_producto, float cantidad, int id_proveedor)
         {
             try
             {
-                _repositorio.Guardar(primer_nombre, primer_apellido, numero_proveedor, correo_proveedor);
-                MessageBox.Show("Persona Insertada");
+                _repositorio.Guardar(sk_producto, cantidad, id_proveedor);
+                MessageBox.Show("detalle creado");
             }
             catch (Exception) { MessageBox.Show("Algo Fallo"); }
 
         }
-
-
-
     }
-
-
-
 }

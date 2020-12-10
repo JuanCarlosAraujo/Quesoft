@@ -20,16 +20,16 @@ namespace Gui_Presentacion
         Persona persona;
         public FrmConsultasPersona()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
             proveedorService = new ProveedorService();
-            deudorService = new DeudorService(ConfigConnection.connectionString);
+            deudorService = new DeudorService();
+            DgvConsultarPersona.DataSource = proveedorService.Leer();
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            proveedorService.Connection();
-            DgvConsultarPersona.DataSource = proveedorService.Leer();
+            
+            
         }
        //public static string conexionstring = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
     }

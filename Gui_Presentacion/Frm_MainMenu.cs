@@ -14,11 +14,12 @@ namespace Gui_Presentacion
 {
     public partial class Frm_MainMenu : Form
     {
-        
+        public static ProveedorService proveedorService = new ProveedorService();
         public Frm_MainMenu()
         {
             InitializeComponent();
             BtnMainMenu.Hide();
+            proveedorService.Connection();
 
 
         }

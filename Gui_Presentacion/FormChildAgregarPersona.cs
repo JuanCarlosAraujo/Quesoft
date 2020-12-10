@@ -15,6 +15,8 @@ namespace Gui_Presentacion
 {
     public partial class FormChildAgregarPersona : Form
     {
+        ProveedorService proveedorService;
+        DeudorService deudorService;
         public FormChildAgregarPersona()
         {
             InitializeComponent();
@@ -23,8 +25,12 @@ namespace Gui_Presentacion
             CmbProductos.Hide();
             CmbUnidad.Hide();
             TxtCantidad.Hide();
-            BtnAgregar.Hide();
+            proveedorService = new ProveedorService();
+            deudorService = new DeudorService();
             
+
+
+
 
         }
 
@@ -46,7 +52,6 @@ namespace Gui_Presentacion
             CmbProductos.Show();
             CmbUnidad.Show();
             TxtCantidad.Show();
-            BtnAgregar.Show();
             BtnGenerarFactura.Text = "Generar Factura";
         }
 
@@ -55,14 +60,18 @@ namespace Gui_Presentacion
             LblGuardar.Hide();
             if (CmbTipo.Text.Equals("Deudor"))
             {
-                TxtId.Enabled = true;
-                TxtId.BackColor = Color.White;
+             
+                txtCorreo.Text = String.Empty;
+                txtCorreo.Enabled = false;
+                txtCorreo.BackColor = Color.Silver;
+                LabelIdentificacion.Text = "Identificacion";
             }
             else
             {
-                TxtId.Text = String.Empty;
-                TxtId.Enabled = false;
-                TxtId.BackColor = Color.Silver;
+      
+                txtCorreo.Enabled = true;
+                txtCorreo.BackColor = Color.White;
+                LabelIdentificacion.Text = "Numero De Contacto";
             }
         }
 
@@ -71,16 +80,19 @@ namespace Gui_Presentacion
             String nombre = String.Empty;
             String apellido = String.Empty;
             String documento = String.Empty;
+            String numero = String.Empty;
+            String correo = String.Empty;
 
             nombre = TxtNombre.Text;
             apellido = TxtApellido.Text;
             documento = TxtId.Text;
+            correo = txtCorreo.Text;
 
-            bool validar = ValidacionGuardarPersona(nombre, apellido, documento);
+            bool validar = ValidacionGuardarPersona(nombre, apellido, documento, correo);
 
             if (CmbTipo.Text.Equals("Proveedor") && validar == true)
             {
-                
+                proveedorService.Guardar(nombre,apellido, documento, correo);
             }
             else if(CmbTipo.Text.Equals("Deudor") && validar == true)
             {
@@ -107,14 +119,14 @@ namespace Gui_Presentacion
             LblGuardar.Hide();
         }
 
-        public bool ValidacionGuardarPersona(String nombre, String apellido, String documento)
+        public bool ValidacionGuardarPersona(String nombre, String apellido, String documento, String correo)
         {
-            if (nombre.Equals(String.Empty) || apellido.Equals(String.Empty) || CmbTipo.Text.Equals(String.Empty))
+            if (nombre.Equals(String.Empty) || apellido.Equals(String.Empty) || documento.Equals(String.Empty) || (correo.Equals(String.Empty) &&  CmbTipo.Text == "Proveedor"))
             {
                 LblGuardar.Text = "Error campos vacios";
                 return false;
             }
-            else if (nombre.Equals(String.Empty) || apellido.Equals(String.Empty) || (documento.Equals(String.Empty)) && CmbTipo.Text == "Deudor")
+            else if (nombre.Equals(String.Empty) || apellido.Equals(String.Empty) || documento.Equals(String.Empty))
             {
                 LblGuardar.Text = "Error campos vacios";
                 return false;

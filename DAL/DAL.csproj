@@ -47,13 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetalleDeudorRepository.cs" />
+    <Compile Include="DetalleProveedorRepository.cs" />
+    <Compile Include="ProductoProveedoRepository.cs" />
     <Compile Include="ProductoRepository.cs" />
     <Compile Include="ConexionBD.cs" />
     <Compile Include="DeudorRepository.cs" />
-    <Compile Include="FacturaRepository.cs" />
     <Compile Include="IAcciones.cs" />
     <Compile Include="ProveedorRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReciboProveedorRepository.cs" />
+    <Compile Include="ReciboDeudorRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

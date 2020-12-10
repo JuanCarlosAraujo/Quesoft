@@ -1,5 +1,4 @@
-﻿using Entity;
-using Oracle.ManagedDataAccess.Client;
+﻿using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class DeudorRepository
+    public class DetalleDeudorRepository
     {
         public static OracleConnection conn;
         public static ConexionBD conexion = new ConexionBD();
-        public DeudorRepository(ConexionBD conexion)
+        public DetalleDeudorRepository(ConexionBD conexion)
         {
             conn = conexion.Conectar();
         }
@@ -30,23 +29,25 @@ namespace DAL
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conexion.Conectar();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from deudor";
+            cmd.CommandText = "select * from detalle_deudor";
             OracleDataAdapter da = new OracleDataAdapter();
             da.SelectCommand = cmd;
             da.Fill(dt);
             return dt;
         }
 
-        public void Guardar(String primer_nombre, String primer_apellido, String documento)
+        public void Guardar(String sk_producto, float cantidad, String cedula)
         {
             conexion.Open();
-            OracleCommand comando = new OracleCommand("pro_añadir_deudor", conn);
+            OracleCommand comando = new OracleCommand("pro_añadir_detalle_deudor", conn);
             comando.CommandType = System.Data.CommandType.StoredProcedure;
-            comando.Parameters.Add("cedula", OracleDbType.Varchar2).Value = documento;
-            comando.Parameters.Add("primer_nombre", OracleDbType.Varchar2).Value = primer_nombre;
-            comando.Parameters.Add("primer_apellido", OracleDbType.Varchar2).Value = primer_apellido;
+            comando.Parameters.Add("sk_producto", OracleDbType.Varchar2).Value = sk_producto;
+            comando.Parameters.Add("cantidad", OracleDbType.BinaryFloat).Value = cantidad;
+            comando.Parameters.Add("cedula", OracleDbType.Varchar2).Value = cedula;
             comando.ExecuteNonQuery();
             conexion.Close();
         }
+
+
     }
 }

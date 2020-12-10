@@ -21,7 +21,7 @@ namespace Gui_Presentacion
         {
             InitializeComponent();
             proveedorService = new ProveedorService();
-            deudorService = new DeudorService(ConfigConnection.connectionString);
+            deudorService = new DeudorService();
             openFormChild(new FormChildAgregarPersona());
         }
 
