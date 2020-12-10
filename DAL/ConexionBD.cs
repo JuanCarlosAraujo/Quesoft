@@ -11,21 +11,27 @@ namespace DAL
 {
     public class ConexionBD
     {
-        internal OracleConnection connection;
+       public static OracleConnection conn = new OracleConnection();
         public static string conexionstring = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        public ConexionBD(string conexionString)
+        
+        public OracleConnection Conectar()
         {
-            connection = new OracleConnection(conexionString);
-        }
+            conn.ConnectionString = conexionstring;
+            return conn;
+       }
+
         public void Open()
         {
-            connection.Open();
+            conn.Open();
         }
         public void Close()
         {
-            connection.Close();
+            conn.Close(); 
         }
-
+        public String State()
+        {
+            return conn.State.ToString();
+        }
 
     }
 }

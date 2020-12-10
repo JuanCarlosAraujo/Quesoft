@@ -80,7 +80,7 @@ namespace Gui_Presentacion
 
             if (CmbTipo.Text.Equals("Proveedor") && validar == true)
             {
-                Proveedor persona = new Proveedor(nombre, apellido);
+                
             }
             else if(CmbTipo.Text.Equals("Deudor") && validar == true)
             {

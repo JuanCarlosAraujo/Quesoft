@@ -44,18 +44,13 @@
             this.CmbUnidad = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.BtnGenerarFactura = new System.Windows.Forms.Button();
-            this.dtgvPersonas = new System.Windows.Forms.DataGridView();
-            this.idPersona = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.LblGuardar = new System.Windows.Forms.Label();
             this.BtnEdit = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dtgvPersonas = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPersonas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -243,53 +238,6 @@
             this.BtnGenerarFactura.UseVisualStyleBackColor = false;
             this.BtnGenerarFactura.Click += new System.EventHandler(this.BtnGenerarFactura_Click);
             // 
-            // dtgvPersonas
-            // 
-            this.dtgvPersonas.AllowUserToOrderColumns = true;
-            this.dtgvPersonas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvPersonas.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
-            this.dtgvPersonas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvPersonas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dtgvPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvPersonas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idPersona,
-            this.nombres,
-            this.apellidos,
-            this.productos,
-            this.cantidad});
-            this.dtgvPersonas.GridColor = System.Drawing.Color.SlateGray;
-            this.dtgvPersonas.Location = new System.Drawing.Point(262, 43);
-            this.dtgvPersonas.Name = "dtgvPersonas";
-            this.dtgvPersonas.Size = new System.Drawing.Size(450, 156);
-            this.dtgvPersonas.TabIndex = 28;
-            // 
-            // idPersona
-            // 
-            this.idPersona.HeaderText = "Id";
-            this.idPersona.Name = "idPersona";
-            // 
-            // nombres
-            // 
-            this.nombres.HeaderText = "Nombres";
-            this.nombres.Name = "nombres";
-            // 
-            // apellidos
-            // 
-            this.apellidos.HeaderText = "Apellidos";
-            this.apellidos.Name = "apellidos";
-            // 
-            // productos
-            // 
-            this.productos.HeaderText = "Productos";
-            this.productos.Name = "productos";
-            // 
-            // cantidad
-            // 
-            this.cantidad.HeaderText = "Cantidad";
-            this.cantidad.Name = "cantidad";
-            // 
             // BtnGuardar
             // 
             this.BtnGuardar.BackColor = System.Drawing.Color.Indigo;
@@ -378,19 +326,27 @@
             this.button2.Text = "Borrar";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // dtgvPersonas
+            // 
+            this.dtgvPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvPersonas.Location = new System.Drawing.Point(263, 50);
+            this.dtgvPersonas.Name = "dtgvPersonas";
+            this.dtgvPersonas.Size = new System.Drawing.Size(449, 150);
+            this.dtgvPersonas.TabIndex = 35;
+            // 
             // FormChildAgregarPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(724, 260);
+            this.Controls.Add(this.dtgvPersonas);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnEdit);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.LblGuardar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BtnGuardar);
-            this.Controls.Add(this.dtgvPersonas);
             this.Controls.Add(this.BtnGenerarFactura);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CmbUnidad);
@@ -434,17 +390,12 @@
         private System.Windows.Forms.ComboBox CmbUnidad;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnGenerarFactura;
-        private System.Windows.Forms.DataGridView dtgvPersonas;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label LblGuardar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idPersona;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
         private System.Windows.Forms.Button BtnEdit;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dtgvPersonas;
     }
 }

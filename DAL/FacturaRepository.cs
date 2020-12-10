@@ -15,7 +15,7 @@ namespace DAL
         public static OracleConnection conn;
         public FacturaRepository(ConexionBD conexion)
         {
-            conn = conexion.connection;
+            
         }
         public Factura BuscarPorIdentificacion(string identificacion)
         {

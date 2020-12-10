@@ -15,7 +15,7 @@ namespace BLL
 
         public FacturaService(string connectionString)
         {
-            _conexion = new ConexionBD(connectionString);
+            _conexion = new ConexionBD();
             _repositorio = new FacturaRepository(_conexion);
         }
 

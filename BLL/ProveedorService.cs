@@ -2,9 +2,12 @@
 using Entity;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.OracleClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -13,69 +16,36 @@ namespace BLL
         private readonly ConexionBD _conexion;
         private readonly ProveedorRepository _repositorio;
 
-        public ProveedorService(string connectionString)
+        public ProveedorService()
         {
-            _conexion = new ConexionBD(connectionString);
+            _conexion = new ConexionBD();
             _repositorio = new ProveedorRepository(_conexion);
         }
 
-        public GuardarProveedorResponse Guardar(Proveedor proveedor)
+        public void Connection()
         {
             try
             {
                 _conexion.Open();
-                _repositorio.Guardar(proveedor);
+                MessageBox.Show(_conexion.State());
                 _conexion.Close();
-                return new GuardarProveedorResponse(proveedor);
             }
-            catch (Exception e)
-            {
-                return new GuardarProveedorResponse($"Error de la Aplicacion: {e.Message}");
-            }
-            finally { _conexion.Close(); }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+            
         }
 
-        public Proveedor BuscarxIdentificacion(string identificacion)
-        {
-            _conexion.Open();
-            Proveedor proveedor = _repositorio.BuscarPorIdentificacion(identificacion);
-            _conexion.Close();
-            return proveedor;
-        }
-
-        public List<Proveedor> ConsultarTodos()
-        {
-            _conexion.Open();
-            List<Proveedor> proveedor = _repositorio.ConsultarTodo();
-            _conexion.Close();
-            return proveedor;
-        }
-
-        public string Eliminar(string identificacion)
+        public DataTable Leer()
         {
             try
             {
-                _conexion.Open();
-                var persona = _repositorio.BuscarPorIdentificacion(identificacion);
-                if (persona != null)
-                {
-                    _repositorio.Eliminar(persona);
-                    _conexion.Close();
-                    return ($"El registro {persona.Nombre} se ha eliminado satisfactoriamente.");
-                }
-                else
-                {
-                    return ($"Lo sentimos, {identificacion} no se encuentra registrada.");
-                }
+                _repositorio.Leer();
             }
-            catch (Exception e)
-            {
-
-                return $"Error de la Aplicación: {e.Message}";
-            }
-            finally { _conexion.Close(); }
-
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+            return _repositorio.Leer();
         }
+
+        
+
 
     }
 

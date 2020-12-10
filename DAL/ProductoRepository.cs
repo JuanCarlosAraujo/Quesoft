@@ -14,7 +14,7 @@ namespace DAL
         public static OracleConnection conn;
         public ProductoRepository(ConexionBD conexion)
         {
-            conn = conexion.connection;
+            
         }
         public Producto BuscarPorIdentificacion(string identificacion)
         {
@@ -22,10 +22,11 @@ namespace DAL
             using (var command = conn.CreateCommand())
             {
                 command.CommandText = "select * from Producto where Identificacion=@Identificacion";
-                command.Parameters.Add("@Identificacion", identificacion);
+                command.Parameters.Add("@Identificacion",OracleDbType.Varchar2).Value = identificacion;
                 dataReader = command.ExecuteReader();
                 dataReader.Read();
-                return DataReaderMapToPerson(dataReader);
+                Producto producto = DataReaderMapToPerson(dataReader);
+                return producto;
             }
         }
         public List<Producto> ConsultarTodo()

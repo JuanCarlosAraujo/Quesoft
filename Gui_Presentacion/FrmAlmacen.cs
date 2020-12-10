@@ -17,19 +17,33 @@ namespace Gui_Presentacion
             InitializeComponent();
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
+        private void BtnMostrarProductos_Click(object sender, EventArgs e)
+        {
+            openFormChild(new FrmBuscarProductos());
+        }
+
+        private void BtnAgregarProductos_Click(object sender, EventArgs e)
+        {
+            openFormChild(new ChildFormAgregarProductos());
+        }
+
+        private void BtnCalcularVentas_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void openFormChild(object formChild)
         {
+            if (this.panelChildForm.Controls.Count > 0)
+            {
+                this.panelChildForm.Controls.RemoveAt(0);
+            }
 
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            
+            Form child = formChild as Form;
+            child.TopLevel = false;
+            child.Dock = DockStyle.Fill;
+            this.panelChildForm.Controls.Add(child);
+            this.panelChildForm.Tag = child;
+            child.Show();
         }
     }
 }

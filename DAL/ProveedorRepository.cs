@@ -2,19 +2,56 @@
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
-    public class ProveedorRepository : IAcciones<Proveedor>
+    public class ProveedorRepository 
     {
         public static OracleConnection conn;
+        public static ConexionBD conexion = new ConexionBD();
         public ProveedorRepository(ConexionBD conexion)
         {
-            conn = conexion.connection;
+            conn = conexion.Conectar();
         }
+       
+        public OracleConnection Conexion()
+        {
+            conn = conexion.Conectar();
+            return conn;
+        }
+
+        public DataTable Leer()
+        {
+            DataTable dt = new DataTable();
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conexion.Conectar();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from PROVEEDOR";
+            OracleDataAdapter da = new OracleDataAdapter();
+            da.SelectCommand = cmd;
+            da.Fill(dt);
+            return dt;
+        }
+
+        public void Guardar(String primer_nombre, String primer_apellido, String numero_proveedor, String correo_proveedor)
+        {
+            conexion.Open();
+            OracleCommand comando = new OracleCommand("pro_añadir_proveedor", conn);
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.Parameters.Add("primer_nombre", OracleDbType.Varchar2).Value = primer_nombre;
+            comando.Parameters.Add("primer_apellido", OracleDbType.Varchar2).Value = primer_apellido;
+            comando.Parameters.Add("numero_proveedor", OracleDbType.Varchar2).Value = numero_proveedor;
+            comando.Parameters.Add("correo_proveedor", OracleDbType.Varchar2).Value = correo_proveedor;
+            comando.ExecuteNonQuery();
+            conexion.Close();
+
+        }
+
 
         public Proveedor BuscarPorIdentificacion(string identificacion)
         {
@@ -29,25 +66,6 @@ namespace DAL
             }
         }
 
-        public List<Proveedor> ConsultarTodo()
-        {
-            OracleDataReader dataReader;
-            List<Proveedor> proveedores = new List<Proveedor>();
-            using (var command = conn.CreateCommand())
-            {
-                command.CommandText = "Select * from persona ";
-                dataReader = command.ExecuteReader();
-                if (dataReader.HasRows)
-                {
-                    while (dataReader.Read())
-                    {
-                        Proveedor proveedor = DataReaderMapToPerson(dataReader);
-                        proveedores.Add(proveedor);
-                    }
-                }
-            }
-            return proveedores;
-        }
 
         public Proveedor DataReaderMapToPerson(OracleDataReader dataReader)
         {

@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    class DeudorService
+    public class DeudorService
     {
         private readonly ConexionBD _conexion;
         private readonly DeudorRepository _repositorio;
 
         public DeudorService(string connectionString)
         {
-            _conexion = new ConexionBD(connectionString);
+            
             _repositorio = new DeudorRepository(_conexion);
         }
 

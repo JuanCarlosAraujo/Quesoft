@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,15 @@ namespace Gui_Presentacion
 {
     public partial class Frm_AgentesYDeudas : Form
     {
+        ProveedorService proveedorService;
+        DeudorService deudorService;
+        Persona persona;
         public Frm_AgentesYDeudas()
         {
             InitializeComponent();
+            proveedorService = new ProveedorService();
+            deudorService = new DeudorService(ConfigConnection.connectionString);
+            openFormChild(new FormChildAgregarPersona());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,6 +45,10 @@ namespace Gui_Presentacion
             child.Show();
         }
 
+        private void BtnConsultas_Click(object sender, EventArgs e)
+        {
+            openFormChild(new FrmConsultasPersona());
+        }
     }
 
 }

@@ -32,7 +32,7 @@
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnConsultas = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -83,22 +83,23 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // BtnConsultas
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.Indigo;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrchid;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(196, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Consultas";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnConsultas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnConsultas.BackColor = System.Drawing.Color.Indigo;
+            this.BtnConsultas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnConsultas.FlatAppearance.BorderSize = 0;
+            this.BtnConsultas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrchid;
+            this.BtnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConsultas.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConsultas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnConsultas.Location = new System.Drawing.Point(196, 97);
+            this.BtnConsultas.Name = "BtnConsultas";
+            this.BtnConsultas.Size = new System.Drawing.Size(147, 23);
+            this.BtnConsultas.TabIndex = 7;
+            this.BtnConsultas.Text = "Consultas";
+            this.BtnConsultas.UseVisualStyleBackColor = false;
+            this.BtnConsultas.Click += new System.EventHandler(this.BtnConsultas_Click);
             // 
             // label1
             // 
@@ -121,8 +122,9 @@
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnConsultas);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_AgentesYDeudas";
             this.Text = "Frm_AgentesYDeudas";
@@ -136,7 +138,7 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnConsultas;
         private System.Windows.Forms.Label label1;
     }
 }

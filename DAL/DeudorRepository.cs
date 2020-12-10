@@ -13,7 +13,7 @@ namespace DAL
         public static OracleConnection conn;
         public DeudorRepository(ConexionBD conexion)
         {
-            conn = conexion.connection;
+            
         }
 
         public Deudor BuscarPorIdentificacion(string identificacion)

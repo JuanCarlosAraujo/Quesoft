@@ -37,6 +37,7 @@
       <HintPath>..\packages\Oracle.ManagedDataAccess.19.10.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildFormAgregarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormAgregarProductos.Designer.cs">
+      <DependentUpon>ChildFormAgregarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormChildAgregarPersona.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +68,35 @@
     <Compile Include="FormChildMostrarProductos.Designer.cs">
       <DependentUpon>FormChildMostrarProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarProducto.Designer.cs">
+      <DependentUpon>FrmAgregarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAlmacen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAlmacen.Designer.cs">
       <DependentUpon>FrmAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarProductos.Designer.cs">
+      <DependentUpon>FrmBuscarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarProductos.Designer.cs">
+      <DependentUpon>FrmConsultarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultasPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultasPersona.Designer.cs">
+      <DependentUpon>FrmConsultasPersona.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_AgentesYDeudas.cs">
       <SubType>Form</SubType>
@@ -79,11 +110,11 @@
     <Compile Include="Frm_Finanzas.Designer.cs">
       <DependentUpon>Frm_Finanzas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Principal.cs">
+    <Compile Include="Frm_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Principal.Designer.cs">
-      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    <Compile Include="Frm_MainMenu.Designer.cs">
+      <DependentUpon>Frm_MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Productos.cs">
       <SubType>Form</SubType>
@@ -93,20 +124,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildFormAgregarProductos.resx">
+      <DependentUpon>ChildFormAgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChildAgregarPersona.resx">
       <DependentUpon>FormChildAgregarPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormChildMostrarProductos.resx">
       <DependentUpon>FormChildMostrarProductos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarProducto.resx">
+      <DependentUpon>FrmAgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAlmacen.resx">
       <DependentUpon>FrmAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarProductos.resx">
+      <DependentUpon>FrmBuscarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarProductos.resx">
+      <DependentUpon>FrmConsultarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultasPersona.resx">
+      <DependentUpon>FrmConsultasPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_AgentesYDeudas.resx">
       <DependentUpon>Frm_AgentesYDeudas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Principal.resx">
-      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_MainMenu.resx">
+      <DependentUpon>Frm_MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Productos.resx">
       <DependentUpon>Frm_Productos.cs</DependentUpon>

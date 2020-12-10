@@ -16,7 +16,7 @@ namespace BLL
         public ProductosService(string connectionString)
         {
             
-             _conexion = new ConexionBD(connectionString);
+             _conexion = new ConexionBD();
              _repositorio = new ProductoRepository(_conexion);
           
         }
