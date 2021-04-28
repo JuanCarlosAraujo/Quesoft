@@ -8,6 +8,7 @@ namespace Entity
 {
     public class Factura
     {
+        //HOLA COMO ESTAS
         public Persona Persona { set; get; }
         public double ValorTotal { set; get; }
         public List<DetalleFactura> Productos { set; get; }
