@@ -8,7 +8,6 @@ namespace Entity
 {
     public class Factura
     {
-        //HOLA COMO ESTAS
         public Persona Persona { set; get; }
         public double ValorTotal { set; get; }
         public List<DetalleFactura> Productos { set; get; }
@@ -33,7 +32,7 @@ namespace Entity
 
         }
 
-        public void RealizarDetalleFactura(Producto producto, double cantidad)
+        public void RealizarDetalleFactura(Producto producto, double cantidad, string unidad)
         {
             DetalleFactura detallefactura = new DetalleFactura(producto, cantidad);
             this.Productos.Add(detallefactura);
