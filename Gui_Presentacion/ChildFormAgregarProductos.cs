@@ -18,7 +18,6 @@ namespace Gui_Presentacion
         public ChildFormAgregarProductos()
         {
             InitializeComponent();
-            DtgvAgregarProductos.DataSource = productosService.Leer();
 
         }
 
@@ -39,9 +38,6 @@ namespace Gui_Presentacion
             cantidad = TxtPrecioVenta.Text;
             proveedor = Convert.ToInt32(CmbProveedor);
 
-            productosService.Guardar(nombre, categoria, precioventa, costo);
-            sk_producto = productosService.ConsultarIdProducto(nombre);
-            productosProveedorService.Guardar(sk_producto, proveedor);
 
 
 

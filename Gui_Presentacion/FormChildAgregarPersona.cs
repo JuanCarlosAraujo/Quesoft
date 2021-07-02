@@ -92,7 +92,6 @@ namespace Gui_Presentacion
 
             if (CmbTipo.Text.Equals("Proveedor") && validar == true)
             {
-                proveedorService.Guardar(nombre,apellido, documento, correo);
             }
             else if(CmbTipo.Text.Equals("Deudor") && validar == true)
             {

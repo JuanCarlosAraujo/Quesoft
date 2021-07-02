@@ -18,7 +18,6 @@ namespace Entity
         {
             this.Producto = producto;
             this.Cantidad = cantidad;
-            this.PrecioTotal = producto.PrecioVenta * cantidad;
         }
 
         public Mercancia()

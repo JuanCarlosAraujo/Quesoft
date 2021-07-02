@@ -23,7 +23,6 @@ namespace Gui_Presentacion
             InitializeComponent();            
             proveedorService = new ProveedorService();
             deudorService = new DeudorService();
-            DgvConsultarPersona.DataSource = proveedorService.Leer();
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)

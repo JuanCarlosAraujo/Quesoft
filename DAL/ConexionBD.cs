@@ -1,37 +1,54 @@
-﻿using Oracle.ManagedDataAccess.Client;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Data.SqlClient;
+using Entity;
 
 namespace DAL
 {
     public class ConexionBD
     {
-       public static OracleConnection conn = new OracleConnection();
-        public static string conexionstring = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        
-        public OracleConnection Conectar()
-        {
-            conn.ConnectionString = conexionstring;
-            return conn;
-       }
+        public ConexionManager conexionManager;
+        public SqlConnection sqlConnection;
 
-        public void Open()
+        public ConexionBD(ConexionManager conexionManager)
         {
-            conn.Open();
-        }
-        public void Close()
-        {
-            conn.Close(); 
-        }
-        public String State()
-        {
-            return conn.State.ToString();
+            sqlConnection = conexionManager.Conexion;
         }
 
+        public void Guardar(Producto producto)
+        {
+            using (var comando = sqlConnection.CreateCommand())
+            {
+                comando.CommandText = "insert into productos (nombreProducto,categoria,cantidad) values(@nombre,@categoria,@cantidad)";
+                comando.Parameters.AddWithValue("@nombre", producto.Nombre);
+                comando.Parameters.AddWithValue("@categoria", producto.categoria);
+                comando.Parameters.AddWithValue("@cantidad", producto.cantidad);
+
+                comando.ExecuteNonQuery();
+            }
+        }
+
+        public List<Producto> Consultar()
+        {
+            List<Producto> productos = new List<Producto>();
+            using (var comando = sqlConnection.CreateCommand())
+            {
+                comando.CommandText = "SELECT nombreProducto,categoria,cantidad FROM productos";
+                var lector = comando.ExecuteReader();
+                if (lector.HasRows)
+                {
+                    while (lector.Read())
+                    {
+                        Producto producto = new Producto();
+                        producto.Nombre = lector.GetString(0);
+                        producto.categoria = lector.GetString(1);
+                        producto.cantidad = lector.GetInt32(2);
+
+                        productos.Add(producto);
+                    }
+                }
+                lector.Close();
+            }
+            return productos;
+        }
     }
 }
