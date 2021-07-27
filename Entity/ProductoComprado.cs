@@ -13,7 +13,7 @@ namespace Entity
         public double CostoCompra { get; set; }
 
         public ProductoComprado(String nombre, double precioVenta, string idProducto, double costoCompra) :
-            base(nombre)
+            base(nombre, precioVenta, idProducto)
         {
             this.CostoCompra = costoCompra;
         }

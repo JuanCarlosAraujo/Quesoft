@@ -19,6 +19,7 @@ namespace Gui_Presentacion
         {
             InitializeComponent();
             BtnMainMenu.Hide();
+            proveedorService.Connection();
 
 
         }

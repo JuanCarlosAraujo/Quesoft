@@ -9,11 +9,13 @@ namespace Entity
     public class Producto
     {
         public String Nombre { get; set; }
-        public int cantidad { get; set; }
-        public string categoria { set; get; }
-        public Producto(string nombre)
+        public double PrecioVenta { get; set; }
+        public string IdProducto { get; set; }
+        public Producto(string nombre, double precioVenta, string idProducto)
         {
             this.Nombre = nombre;
+            this.PrecioVenta = precioVenta;
+            this.IdProducto = idProducto;
         }
 
         public Producto()

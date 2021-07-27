@@ -17,6 +17,7 @@ namespace Entity
         {
             this.Producto = producto;
             this.Cantidad = cantidad;
+            this.ValorTotal = this.Producto.PrecioVenta * cantidad;
         }
 
         public void TransformarUnidades(Producto producto, String unidad)

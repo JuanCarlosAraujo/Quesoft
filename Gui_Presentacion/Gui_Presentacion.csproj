@@ -56,7 +56,6 @@
     <Compile Include="ChildFormAgregarProductos.Designer.cs">
       <DependentUpon>ChildFormAgregarProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExtraccionCadena.cs" />
     <Compile Include="FormChildAgregarPersona.cs">
       <SubType>Form</SubType>
     </Compile>

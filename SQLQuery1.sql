@@ -1,1 +1,0 @@
-﻿CREATE TABLE productos (nombreProducto VARCHAR(30) PRIMARY KEY, categoria VARCHAR(30), cantidad int);
