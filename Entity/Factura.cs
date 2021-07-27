@@ -32,7 +32,7 @@ namespace Entity
 
         }
 
-        public void RealizarDetalleFactura(Producto producto, double cantidad)
+        public void RealizarDetalleFactura(Producto producto, double cantidad, string unidad)
         {
             DetalleFactura detallefactura = new DetalleFactura(producto, cantidad);
             this.Productos.Add(detallefactura);
