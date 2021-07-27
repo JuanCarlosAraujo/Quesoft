@@ -34,6 +34,10 @@
             this.BtnAgregarProductos = new System.Windows.Forms.Button();
             this.BtnCalcularVentas = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +62,7 @@
             this.BtnMostrarProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMostrarProductos.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMostrarProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnMostrarProductos.Location = new System.Drawing.Point(216, 109);
+            this.BtnMostrarProductos.Location = new System.Drawing.Point(216, 95);
             this.BtnMostrarProductos.Name = "BtnMostrarProductos";
             this.BtnMostrarProductos.Size = new System.Drawing.Size(137, 23);
             this.BtnMostrarProductos.TabIndex = 2;
@@ -76,7 +80,7 @@
             this.BtnAgregarProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarProductos.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregarProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnAgregarProductos.Location = new System.Drawing.Point(353, 109);
+            this.BtnAgregarProductos.Location = new System.Drawing.Point(353, 95);
             this.BtnAgregarProductos.Name = "BtnAgregarProductos";
             this.BtnAgregarProductos.Size = new System.Drawing.Size(115, 23);
             this.BtnAgregarProductos.TabIndex = 3;
@@ -94,7 +98,7 @@
             this.BtnCalcularVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCalcularVentas.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCalcularVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnCalcularVentas.Location = new System.Drawing.Point(468, 109);
+            this.BtnCalcularVentas.Location = new System.Drawing.Point(468, 95);
             this.BtnCalcularVentas.Name = "BtnCalcularVentas";
             this.BtnCalcularVentas.Size = new System.Drawing.Size(115, 23);
             this.BtnCalcularVentas.TabIndex = 4;
@@ -108,10 +112,78 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelChildForm.BackColor = System.Drawing.Color.Gray;
-            this.panelChildForm.Location = new System.Drawing.Point(39, 165);
+            this.panelChildForm.Location = new System.Drawing.Point(39, 138);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(724, 260);
             this.panelChildForm.TabIndex = 5;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button5.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(555, 427);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(155, 23);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "Finanzas";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button6.BackColor = System.Drawing.Color.Indigo;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(400, 427);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(155, 23);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "Prveedores y Deuda";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button7.BackColor = System.Drawing.Color.OliveDrab;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Location = new System.Drawing.Point(245, 427);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(155, 23);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Productos";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button8.BackColor = System.Drawing.Color.Goldenrod;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Location = new System.Drawing.Point(90, 413);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(155, 37);
+            this.button8.TabIndex = 18;
+            this.button8.Text = "Almacen";
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // FrmAlmacen
             // 
@@ -119,6 +191,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.BtnCalcularVentas);
             this.Controls.Add(this.BtnAgregarProductos);
@@ -141,5 +217,9 @@
         private System.Windows.Forms.Button BtnAgregarProductos;
         private System.Windows.Forms.Button BtnCalcularVentas;
         private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
