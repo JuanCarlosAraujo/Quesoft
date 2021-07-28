@@ -111,9 +111,9 @@
             this.labelGestion.ForeColor = System.Drawing.Color.White;
             this.labelGestion.Location = new System.Drawing.Point(44, 20);
             this.labelGestion.Name = "labelGestion";
-            this.labelGestion.Size = new System.Drawing.Size(123, 16);
+            this.labelGestion.Size = new System.Drawing.Size(124, 16);
             this.labelGestion.TabIndex = 2;
-            this.labelGestion.Text = "Gestión Productos";
+            this.labelGestion.Text = "Registrar Compras";
             // 
             // pictureBoxProductos
             // 
