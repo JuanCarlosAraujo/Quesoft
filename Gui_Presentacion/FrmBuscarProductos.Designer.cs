@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DgvConsultarProducto = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.CmbTipo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvConsultarProducto)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DgvConsultarProducto
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(573, 236);
-            this.dataGridView1.TabIndex = 0;
+            this.DgvConsultarProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvConsultarProducto.Location = new System.Drawing.Point(12, 12);
+            this.DgvConsultarProducto.Name = "DgvConsultarProducto";
+            this.DgvConsultarProducto.Size = new System.Drawing.Size(573, 236);
+            this.DgvConsultarProducto.TabIndex = 0;
             // 
             // label2
             // 
@@ -112,11 +112,11 @@
             this.Controls.Add(this.CmbTipo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TxtNombre);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvConsultarProducto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmBuscarProductos";
             this.Text = "FrmBuscarProductos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvConsultarProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,7 +124,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvConsultarProducto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.ComboBox CmbTipo;
