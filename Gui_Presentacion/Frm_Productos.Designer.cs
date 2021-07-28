@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,18 +56,20 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Geometr212 BkCn BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.OliveDrab;
             this.label2.Location = new System.Drawing.Point(353, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 23);
+            this.label2.Size = new System.Drawing.Size(82, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Facturas";
             // 
@@ -78,7 +81,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Location = new System.Drawing.Point(554, 426);
             this.button4.Name = "button4";
@@ -95,7 +98,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(399, 426);
             this.button1.Name = "button1";
@@ -112,7 +115,7 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.Location = new System.Drawing.Point(244, 409);
             this.button5.Name = "button5";
@@ -129,7 +132,7 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button6.Location = new System.Drawing.Point(89, 426);
             this.button6.Name = "button6";
@@ -141,11 +144,11 @@
             // labelCorreo
             // 
             this.labelCorreo.AutoSize = true;
-            this.labelCorreo.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCorreo.ForeColor = System.Drawing.Color.OliveDrab;
             this.labelCorreo.Location = new System.Drawing.Point(421, 172);
             this.labelCorreo.Name = "labelCorreo";
-            this.labelCorreo.Size = new System.Drawing.Size(48, 16);
+            this.labelCorreo.Size = new System.Drawing.Size(49, 16);
             this.labelCorreo.TabIndex = 57;
             this.labelCorreo.Text = "Correo";
             // 
@@ -162,11 +165,11 @@
             // LblGuardar
             // 
             this.LblGuardar.AutoSize = true;
-            this.LblGuardar.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblGuardar.ForeColor = System.Drawing.Color.DarkRed;
             this.LblGuardar.Location = new System.Drawing.Point(421, 296);
             this.LblGuardar.Name = "LblGuardar";
-            this.LblGuardar.Size = new System.Drawing.Size(138, 14);
+            this.LblGuardar.Size = new System.Drawing.Size(126, 13);
             this.LblGuardar.TabIndex = 54;
             this.LblGuardar.Text = "Guardado Correctamente";
             this.LblGuardar.Visible = false;
@@ -187,7 +190,7 @@
             this.BtnGuardar.FlatAppearance.BorderSize = 0;
             this.BtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrchid;
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuardar.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnGuardar.Location = new System.Drawing.Point(424, 266);
             this.BtnGuardar.Name = "BtnGuardar";
@@ -204,7 +207,7 @@
             this.BtnGenerarFactura.FlatAppearance.BorderSize = 0;
             this.BtnGenerarFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrchid;
             this.BtnGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGenerarFactura.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGenerarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGenerarFactura.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnGenerarFactura.Location = new System.Drawing.Point(424, 313);
             this.BtnGenerarFactura.Name = "BtnGenerarFactura";
@@ -227,11 +230,11 @@
             // LabelIdentificacion
             // 
             this.LabelIdentificacion.AutoSize = true;
-            this.LabelIdentificacion.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelIdentificacion.ForeColor = System.Drawing.Color.OliveDrab;
             this.LabelIdentificacion.Location = new System.Drawing.Point(421, 130);
             this.LabelIdentificacion.Name = "LabelIdentificacion";
-            this.LabelIdentificacion.Size = new System.Drawing.Size(93, 16);
+            this.LabelIdentificacion.Size = new System.Drawing.Size(86, 16);
             this.LabelIdentificacion.TabIndex = 49;
             this.LabelIdentificacion.Text = "Identificacion";
             // 
@@ -255,11 +258,11 @@
             // LblProductos
             // 
             this.LblProductos.AutoSize = true;
-            this.LblProductos.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblProductos.ForeColor = System.Drawing.Color.OliveDrab;
             this.LblProductos.Location = new System.Drawing.Point(62, 172);
             this.LblProductos.Name = "LblProductos";
-            this.LblProductos.Size = new System.Drawing.Size(71, 16);
+            this.LblProductos.Size = new System.Drawing.Size(69, 16);
             this.LblProductos.TabIndex = 46;
             this.LblProductos.Text = "Productos";
             // 
@@ -277,7 +280,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.OliveDrab;
             this.label1.Location = new System.Drawing.Point(62, 130);
             this.label1.Name = "label1";
@@ -288,11 +291,11 @@
             // LblCantidad
             // 
             this.LblCantidad.AutoSize = true;
-            this.LblCantidad.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCantidad.ForeColor = System.Drawing.Color.OliveDrab;
             this.LblCantidad.Location = new System.Drawing.Point(62, 215);
             this.LblCantidad.Name = "LblCantidad";
-            this.LblCantidad.Size = new System.Drawing.Size(65, 16);
+            this.LblCantidad.Size = new System.Drawing.Size(62, 16);
             this.LblCantidad.TabIndex = 43;
             this.LblCantidad.Text = "Cantidad";
             // 
@@ -306,11 +309,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.OliveDrab;
             this.label3.Location = new System.Drawing.Point(421, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.Size = new System.Drawing.Size(65, 16);
             this.label3.TabIndex = 41;
             this.label3.Text = "Apellidos";
             // 
@@ -324,7 +327,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.OliveDrab;
             this.label5.Location = new System.Drawing.Point(63, 88);
             this.label5.Name = "label5";
@@ -338,6 +341,7 @@
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(312, 20);
             this.TxtNombre.TabIndex = 38;
+            this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
             // dataGridView1
             // 
@@ -355,7 +359,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrchid;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(605, 313);
             this.button2.Name = "button2";
@@ -371,7 +375,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrchid;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(605, 266);
             this.button3.Name = "button3";
@@ -379,6 +383,10 @@
             this.button3.TabIndex = 60;
             this.button3.Text = "Verificar Identificacion";
             this.button3.UseVisualStyleBackColor = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Frm_Productos
             // 
@@ -416,7 +424,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Productos";
             this.Text = "Frm_Productos";
+            this.Load += new System.EventHandler(this.Frm_Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -451,5 +461,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
