@@ -45,5 +45,10 @@ namespace Gui_Presentacion
             this.panelChildForm.Tag = child;
             child.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFormChild(new FrmModificarProductos());
+        }
     }
 }

@@ -164,7 +164,7 @@
             this.LblGuardar.AutoSize = true;
             this.LblGuardar.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblGuardar.ForeColor = System.Drawing.Color.DarkRed;
-            this.LblGuardar.Location = new System.Drawing.Point(421, 286);
+            this.LblGuardar.Location = new System.Drawing.Point(421, 296);
             this.LblGuardar.Name = "LblGuardar";
             this.LblGuardar.Size = new System.Drawing.Size(138, 14);
             this.LblGuardar.TabIndex = 54;
@@ -189,7 +189,7 @@
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnGuardar.Location = new System.Drawing.Point(424, 256);
+            this.BtnGuardar.Location = new System.Drawing.Point(424, 266);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(156, 27);
             this.BtnGuardar.TabIndex = 52;
@@ -206,7 +206,7 @@
             this.BtnGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGenerarFactura.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGenerarFactura.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnGenerarFactura.Location = new System.Drawing.Point(424, 303);
+            this.BtnGenerarFactura.Location = new System.Drawing.Point(424, 313);
             this.BtnGenerarFactura.Name = "BtnGenerarFactura";
             this.BtnGenerarFactura.Size = new System.Drawing.Size(156, 27);
             this.BtnGenerarFactura.TabIndex = 51;
@@ -344,7 +344,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(65, 266);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(311, 64);
+            this.dataGridView1.Size = new System.Drawing.Size(311, 74);
             this.dataGridView1.TabIndex = 58;
             // 
             // button2
@@ -357,7 +357,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(605, 303);
+            this.button2.Location = new System.Drawing.Point(605, 313);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 27);
             this.button2.TabIndex = 59;
@@ -373,7 +373,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(605, 256);
+            this.button3.Location = new System.Drawing.Point(605, 266);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(156, 27);
             this.button3.TabIndex = 60;
