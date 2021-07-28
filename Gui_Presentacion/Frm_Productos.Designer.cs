@@ -52,6 +52,10 @@
             this.TxtApellido = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -139,7 +143,7 @@
             this.labelCorreo.AutoSize = true;
             this.labelCorreo.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCorreo.ForeColor = System.Drawing.Color.OliveDrab;
-            this.labelCorreo.Location = new System.Drawing.Point(414, 230);
+            this.labelCorreo.Location = new System.Drawing.Point(421, 172);
             this.labelCorreo.Name = "labelCorreo";
             this.labelCorreo.Size = new System.Drawing.Size(48, 16);
             this.labelCorreo.TabIndex = 57;
@@ -150,7 +154,7 @@
             this.txtCorreo.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCorreo.Enabled = false;
-            this.txtCorreo.Location = new System.Drawing.Point(417, 249);
+            this.txtCorreo.Location = new System.Drawing.Point(424, 191);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(337, 20);
             this.txtCorreo.TabIndex = 56;
@@ -160,7 +164,7 @@
             this.LblGuardar.AutoSize = true;
             this.LblGuardar.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblGuardar.ForeColor = System.Drawing.Color.DarkRed;
-            this.LblGuardar.Location = new System.Drawing.Point(427, 314);
+            this.LblGuardar.Location = new System.Drawing.Point(421, 286);
             this.LblGuardar.Name = "LblGuardar";
             this.LblGuardar.Size = new System.Drawing.Size(138, 14);
             this.LblGuardar.TabIndex = 54;
@@ -171,7 +175,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(359, 357);
+            this.label4.Location = new System.Drawing.Point(371, 299);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 53;
@@ -185,9 +189,9 @@
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnGuardar.Location = new System.Drawing.Point(417, 284);
+            this.BtnGuardar.Location = new System.Drawing.Point(424, 256);
             this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(163, 27);
+            this.BtnGuardar.Size = new System.Drawing.Size(156, 27);
             this.BtnGuardar.TabIndex = 52;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = false;
@@ -202,7 +206,7 @@
             this.BtnGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGenerarFactura.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGenerarFactura.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnGenerarFactura.Location = new System.Drawing.Point(598, 284);
+            this.BtnGenerarFactura.Location = new System.Drawing.Point(424, 303);
             this.BtnGenerarFactura.Name = "BtnGenerarFactura";
             this.BtnGenerarFactura.Size = new System.Drawing.Size(156, 27);
             this.BtnGenerarFactura.TabIndex = 51;
@@ -215,7 +219,7 @@
             this.CmbUnidad.Items.AddRange(new object[] {
             "Kilogramos",
             "Libras"});
-            this.CmbUnidad.Location = new System.Drawing.Point(107, 290);
+            this.CmbUnidad.Location = new System.Drawing.Point(114, 232);
             this.CmbUnidad.Name = "CmbUnidad";
             this.CmbUnidad.Size = new System.Drawing.Size(263, 21);
             this.CmbUnidad.TabIndex = 50;
@@ -225,7 +229,7 @@
             this.LabelIdentificacion.AutoSize = true;
             this.LabelIdentificacion.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelIdentificacion.ForeColor = System.Drawing.Color.OliveDrab;
-            this.LabelIdentificacion.Location = new System.Drawing.Point(414, 188);
+            this.LabelIdentificacion.Location = new System.Drawing.Point(421, 130);
             this.LabelIdentificacion.Name = "LabelIdentificacion";
             this.LabelIdentificacion.Size = new System.Drawing.Size(93, 16);
             this.LabelIdentificacion.TabIndex = 49;
@@ -235,7 +239,7 @@
             // 
             this.TxtId.BackColor = System.Drawing.Color.White;
             this.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtId.Location = new System.Drawing.Point(417, 207);
+            this.TxtId.Location = new System.Drawing.Point(424, 149);
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(337, 20);
             this.TxtId.TabIndex = 48;
@@ -243,7 +247,7 @@
             // CmbProductos
             // 
             this.CmbProductos.FormattingEnabled = true;
-            this.CmbProductos.Location = new System.Drawing.Point(58, 249);
+            this.CmbProductos.Location = new System.Drawing.Point(65, 191);
             this.CmbProductos.Name = "CmbProductos";
             this.CmbProductos.Size = new System.Drawing.Size(312, 21);
             this.CmbProductos.TabIndex = 47;
@@ -253,7 +257,7 @@
             this.LblProductos.AutoSize = true;
             this.LblProductos.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblProductos.ForeColor = System.Drawing.Color.OliveDrab;
-            this.LblProductos.Location = new System.Drawing.Point(55, 230);
+            this.LblProductos.Location = new System.Drawing.Point(62, 172);
             this.LblProductos.Name = "LblProductos";
             this.LblProductos.Size = new System.Drawing.Size(71, 16);
             this.LblProductos.TabIndex = 46;
@@ -265,7 +269,7 @@
             this.CmbTipo.Items.AddRange(new object[] {
             "Proveedor",
             "Deudor"});
-            this.CmbTipo.Location = new System.Drawing.Point(58, 206);
+            this.CmbTipo.Location = new System.Drawing.Point(65, 148);
             this.CmbTipo.Name = "CmbTipo";
             this.CmbTipo.Size = new System.Drawing.Size(312, 21);
             this.CmbTipo.TabIndex = 45;
@@ -275,7 +279,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.OliveDrab;
-            this.label1.Location = new System.Drawing.Point(55, 188);
+            this.label1.Location = new System.Drawing.Point(62, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 16);
             this.label1.TabIndex = 44;
@@ -286,7 +290,7 @@
             this.LblCantidad.AutoSize = true;
             this.LblCantidad.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCantidad.ForeColor = System.Drawing.Color.OliveDrab;
-            this.LblCantidad.Location = new System.Drawing.Point(55, 273);
+            this.LblCantidad.Location = new System.Drawing.Point(62, 215);
             this.LblCantidad.Name = "LblCantidad";
             this.LblCantidad.Size = new System.Drawing.Size(65, 16);
             this.LblCantidad.TabIndex = 43;
@@ -294,7 +298,7 @@
             // 
             // TxtCantidad
             // 
-            this.TxtCantidad.Location = new System.Drawing.Point(58, 291);
+            this.TxtCantidad.Location = new System.Drawing.Point(65, 233);
             this.TxtCantidad.Name = "TxtCantidad";
             this.TxtCantidad.Size = new System.Drawing.Size(43, 20);
             this.TxtCantidad.TabIndex = 42;
@@ -304,7 +308,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.OliveDrab;
-            this.label3.Location = new System.Drawing.Point(414, 146);
+            this.label3.Location = new System.Drawing.Point(421, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 41;
@@ -312,7 +316,7 @@
             // 
             // TxtApellido
             // 
-            this.TxtApellido.Location = new System.Drawing.Point(417, 165);
+            this.TxtApellido.Location = new System.Drawing.Point(424, 107);
             this.TxtApellido.Name = "TxtApellido";
             this.TxtApellido.Size = new System.Drawing.Size(337, 20);
             this.TxtApellido.TabIndex = 40;
@@ -322,7 +326,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.OliveDrab;
-            this.label5.Location = new System.Drawing.Point(55, 146);
+            this.label5.Location = new System.Drawing.Point(63, 88);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 39;
@@ -330,10 +334,51 @@
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(58, 165);
+            this.TxtNombre.Location = new System.Drawing.Point(65, 107);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(312, 20);
             this.TxtNombre.TabIndex = 38;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(65, 266);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(311, 64);
+            this.dataGridView1.TabIndex = 58;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.OliveDrab;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrchid;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(605, 303);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(156, 27);
+            this.button2.TabIndex = 59;
+            this.button2.Text = "Eliminar Productos";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.OliveDrab;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrchid;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Geometr212 BkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(605, 256);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(156, 27);
+            this.button3.TabIndex = 60;
+            this.button3.Text = "Verificar Identificacion";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // Frm_Productos
             // 
@@ -341,6 +386,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelCorreo);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.LblGuardar);
@@ -368,6 +416,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Productos";
             this.Text = "Frm_Productos";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,5 +448,8 @@
         private System.Windows.Forms.TextBox TxtApellido;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox TxtNombre;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
