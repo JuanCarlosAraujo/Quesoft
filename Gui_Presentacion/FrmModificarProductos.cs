@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Gui_Presentacion
 {
     public partial class FrmModificarProductos : Form
     {
+        ProductosService productos;
         public FrmModificarProductos()
         {
             InitializeComponent();
+            productos = new ProductosService();
+            DgvConsultarProducto.DataSource = productos.Leer();
         }
     }
 }
